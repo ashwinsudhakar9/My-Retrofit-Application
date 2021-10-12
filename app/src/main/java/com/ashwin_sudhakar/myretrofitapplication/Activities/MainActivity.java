@@ -62,7 +62,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void iniRecyclerView() {
 
-        ScaleCenterItemLayoutManager layoutManager = new ScaleCenterItemLayoutManager(this, LinearLayoutManager.HORIZONTAL, true);
+        ScaleCenterItemLayoutManager layoutManager = new ScaleCenterItemLayoutManager(this, LinearLayoutManager.HORIZONTAL, false);
         mRecyclerView.setLayoutManager(layoutManager);
         adaptor = new DataAdaptor(dataModelList);
         mRecyclerView.setAdapter(adaptor);
